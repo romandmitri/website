@@ -1,19 +1,20 @@
 "use client";
 
 import { Config } from "@/src/app/common/config/Config";
-import { Fragment, useEffect, useRef } from "react";
+import { useEffect, useRef } from "react";
 
-type Props = {};
+type Props = {
+	id?: string;
+};
 
 export const Widget = (p: Props) => {
-	const id = "widget";
+	const id = p.id ?? "widget";
 
 	const url = Config.WidgetLoader;
 	const scriptRef = useRef<HTMLScriptElement | undefined>(undefined);
 
 	useEffect(() => {
-		console.log("Widget.useEffect", { url });
-
+		// console.log("Widget.useEffect", { url });
 		if (scriptRef.current) return;
 
 		scriptRef.current = document.createElement("script");
@@ -30,9 +31,5 @@ export const Widget = (p: Props) => {
 		};
 	}, [url]);
 
-	return (
-		<Fragment>
-			<div id={id} />
-		</Fragment>
-	);
+	return <div id={id} />;
 };
