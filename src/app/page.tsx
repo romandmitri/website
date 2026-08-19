@@ -1,5 +1,6 @@
 import { Config } from "@/src/app/common/Config";
 import romanDmitriLogo from "@/src/app/images/romandmitri-logo-square-64x64.png";
+import { Widget } from "@/src/app/modules/widget/Widget";
 import Image from "next/image";
 
 export default function Home() {
@@ -17,6 +18,7 @@ export default function Home() {
 				<p className={""}>{"20260817 Working on something special for you..."}</p>
 			</div>
 			<pre className={"text-xs"}>{JSON.stringify({ Config }, null, "\t")}</pre>
+			<Widget />
 		</div>
 	);
 }

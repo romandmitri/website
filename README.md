@@ -18,8 +18,9 @@ Create `/.env` file with the following keys, as needed:
 DEV_ALPHA=bravo!
 ```
 
-## Run
+## Development
 
 ```
+npm install
 npm run dev
 ```
