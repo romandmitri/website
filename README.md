@@ -1,8 +1,10 @@
+> Looking to hire me? This repo is NOT a great indicator of my abilities, instead checkout my [introduction](https://github.com/romandmitri/introduction)
+> repository for a curated
+> list.
+
 # website
 
 This is my personal website hosted on [romandmitri.com](https://romandmitri.com) via Vercel.
-
-If you are here, you are probably curious if I am a good hire... and I am!
 
 --- 
 
