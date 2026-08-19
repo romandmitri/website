@@ -7,10 +7,10 @@ type Props = {
 	id?: string;
 };
 
-export const Widget = (p: Props) => {
-	const id = "widget-" + (p.id ?? "1");
+export const Emma = (p: Props) => {
+	const id = "emma-" + (p.id ?? "1");
 
-	const url = Config.WidgetLoader;
+	const url = Config.EmmaLoader;
 	const scriptRef = useRef<HTMLScriptElement | undefined>(undefined);
 
 	useEffect(() => {
@@ -20,7 +20,7 @@ export const Widget = (p: Props) => {
 		scriptRef.current = document.createElement("script");
 		scriptRef.current.src = url;
 		scriptRef.current.async = true;
-		scriptRef.current.setAttribute("data-api-key", Config.WidgetApiKey);
+		scriptRef.current.setAttribute("data-api-key", Config.EmmaApiKey);
 		scriptRef.current.setAttribute("data-target-element", id);
 
 		document.body.appendChild(scriptRef.current);
