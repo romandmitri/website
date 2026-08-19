@@ -16,6 +16,10 @@ Create `/.env` file with the following keys, as needed:
 
 ```
 DEV_ALPHA=bravo!
+DEV_DISPLAY=true
+NEXT_PUBLIC_WIDGET_API_KEY=abc123...
+#NEXT_PUBLIC_WIDGET_LOADER=http://localhost:2100/widget/loader.js
+NEXT_PUBLIC_WIDGET_LOADER=https://widget.romandmitri.com/widget/loader.js
 ```
 
 ## Development

@@ -1,6 +1,6 @@
 "use client";
 
-import { Config } from "@/src/app/common/Config";
+import { Config } from "@/src/app/common/config/Config";
 import { Fragment, useEffect, useRef } from "react";
 
 type Props = {};
