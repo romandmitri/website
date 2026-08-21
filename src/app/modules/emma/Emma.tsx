@@ -20,8 +20,8 @@ export const Emma = (p: Props) => {
 		scriptRef.current = document.createElement("script");
 		scriptRef.current.src = url;
 		scriptRef.current.async = true;
-		scriptRef.current.setAttribute("data-api-key", Config.EmmaApiKey);
 		scriptRef.current.setAttribute("data-target-element", id);
+		scriptRef.current.setAttribute("data-widget-id", Config.EmmaWidgetId);
 
 		document.body.appendChild(scriptRef.current);
 
