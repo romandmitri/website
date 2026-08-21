@@ -1,7 +1,6 @@
 import { Config } from "@/src/app/common/config/Config";
 import { ConfigIndicator } from "@/src/app/common/config/ConfigIndicator";
 import { Emma } from "@/src/app/modules/emma/Emma";
-import { Widget } from "@/src/app/modules/widget/Widget";
 
 export default function Home() {
 	return (
@@ -28,7 +27,6 @@ export default function Home() {
 				<p>{"The following widget(s) are loaded from separate servers. They are completely isolated and does other things too!"}</p>
 				<div className={"flex flex-col items-start gap-2"}>
 					<Emma />
-					<Widget />
 				</div>
 			</div>
 		</div>
