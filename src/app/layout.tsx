@@ -1,3 +1,4 @@
+import { TooltipProvider } from "@/src/common/components/shadcn/tooltip";
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "@/src/app/globals.css";
@@ -19,7 +20,9 @@ export const metadata: Metadata = {
 export default function RootLayout(p: LayoutProps<"/">) {
 	return (
 		<html lang="en" className={`${geistSans.variable} ${geistMono.variable} dark h-full antialiased`}>
-			<body className="flex min-h-full flex-col">{p.children}</body>
+			<body className="flex min-h-full flex-col">
+				<TooltipProvider>{p.children}</TooltipProvider>
+			</body>
 		</html>
 	);
 }
